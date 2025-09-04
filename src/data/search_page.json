@@ -1,0 +1,268 @@
+{
+  "seo": {
+    "title": "Busca de Comércios e Serviços Locais | [Nome do Site]",
+    "description": "Encontre os melhores comércios e serviços na sua cidade. Busque por sapatos, roupas, advogados, dentistas, alimentação, mercados e mais, com resultados rápidos e precisos.",
+    "keywords": "comércios locais, serviços locais, busca de negócios, [cidade], sapatos, roupas, advogados, dentistas, alimentação, mercados"
+  },
+  "header": {
+    "logo": {
+      "url": "/logo.png",
+      "alt": "Logo do [Nome do Site]"
+    },
+    "navigation": [
+      {
+        "label": "Início",
+        "link": "/"
+      },
+      {
+        "label": "Categorias",
+        "link": "/categorias"
+      },
+      {
+        "label": "Adicionar Comércio",
+        "link": "/adicionar"
+      }
+    ]
+  },
+  "hero": {
+    "background": {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "alt": "Rua comercial movimentada",
+      "mobileCrop": "center"
+    },
+    "headline": "Descubra os melhores comércios e serviços da sua cidade",
+    "subheadline": "Busque por categoria ou palavra-chave e encontre estabelecimentos próximos a você com facilidade.",
+    "search": {
+      "inputPlaceholder": "Digite o que procura (ex: padaria, dentista)",
+      "locationPlaceholder": "Sua cidade ou bairro",
+      "buttonLabel": "Procurar",
+      "buttonStyle": {
+        "backgroundColor": "#4CAF50",
+        "textColor": "#FFFFFF",
+        "hoverBackgroundColor": "#45A049"
+      }
+    }
+  },
+  "content": {
+    "layout": "two-column",
+    "responsive": {
+      "mobile": {
+        "layout": "single-column",
+        "sidebarPosition": "top",
+        "mainPosition": "below",
+        "sidebarType": "accordion"
+      }
+    },
+    "sidebar": {
+      "type": "category-list",
+      "title": "Categorias",
+      "style": {
+        "width": "25%",
+        "backgroundColor": "#F5F5F5",
+        "padding": "16px"
+      },
+      "categories": [
+        {
+          "name": "Sapatos",
+          "filter": "sapatos",
+          "icon": "shoe"
+        },
+        {
+          "name": "Roupas",
+          "filter": "roupas",
+          "icon": "shirt"
+        },
+        {
+          "name": "Advogado",
+          "filter": "advogado",
+          "icon": "briefcase"
+        },
+        {
+          "name": "Dentista",
+          "filter": "dentista",
+          "icon": "tooth"
+        },
+        {
+          "name": "Alimentação",
+          "filter": "alimentacao",
+          "icon": "utensils"
+        },
+        {
+          "name": "Mercado",
+          "filter": "mercado",
+          "icon": "shopping-cart"
+        },
+        {
+          "name": "Eletrônicos",
+          "filter": "eletronicos",
+          "icon": "laptop"
+        },
+        {
+          "name": "Beleza",
+          "filter": "beleza",
+          "icon": "scissors"
+        },
+        {
+          "name": "Saúde",
+          "filter": "saude",
+          "icon": "heart"
+        },
+        {
+          "name": "Educação",
+          "filter": "educacao",
+          "icon": "book"
+        },
+        {
+          "name": "Automotivo",
+          "filter": "automotivo",
+          "icon": "car"
+        },
+        {
+          "name": "Fitness",
+          "filter": "fitness",
+          "icon": "dumbbell"
+        }
+      ]
+    },
+    "main": {
+      "type": "business-list",
+      "layout": "grid",
+      "columns": {
+        "desktop": 3,
+        "tablet": 2,
+        "mobile": 1
+      },
+      "title": "Comércios Recentes",
+      "style": {
+        "width": "75%",
+        "padding": "16px"
+      },
+      "initialFilter": "latest",
+      "businessCard": {
+        "fields": [
+          {
+            "type": "image",
+            "source": "imageUrl",
+            "alt": "Imagem do comércio",
+            "style": {
+              "width": "100%",
+              "height": "150px",
+              "objectFit": "cover",
+              "borderRadius": "8px"
+            }
+          },
+          {
+            "type": "text",
+            "content": "name",
+            "style": {
+              "fontSize": "20px",
+              "fontWeight": "bold",
+              "color": "#333333"
+            }
+          },
+          {
+            "type": "text",
+            "content": "category",
+            "style": {
+              "fontSize": "14px",
+              "color": "#4CAF50"
+            }
+          },
+          {
+            "type": "text",
+            "content": "description",
+            "style": {
+              "fontSize": "14px",
+              "color": "#666666",
+              "maxLines": 3
+            }
+          },
+          {
+            "type": "rating",
+            "value": "rating",
+            "max": 5,
+            "style": {
+              "color": "#FFEB3B"
+            }
+          },
+          {
+            "type": "text",
+            "content": "address",
+            "style": {
+              "fontSize": "12px",
+              "color": "#666666"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "label": "Ver mais",
+            "link": "/business/{id}",
+            "style": {
+              "backgroundColor": "#FFEB3B",
+              "textColor": "#333333",
+              "hoverBackgroundColor": "#FFD700"
+            }
+          }
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "8px",
+          "padding": "16px",
+          "shadow": "0 2px 4px rgba(0,0,0,0.1)"
+        }
+      }
+    }
+  },
+  "footer": {
+    "text": "© 2025 [Nome do Site]. Todos os direitos reservados.",
+    "links": [
+      {
+        "label": "Sobre nós",
+        "link": "/sobre"
+      },
+      {
+        "label": "Contato",
+        "link": "/contato"
+      },
+      {
+        "label": "Termos de uso",
+        "link": "/termos"
+      },
+      {
+        "label": "Política de privacidade",
+        "link": "/privacidade"
+      },
+      {
+        "label": "Adicionar Comércio",
+        "link": "/adicionar"
+      }
+    ],
+    "style": {
+      "backgroundColor": "#4CAF50",
+      "textColor": "#FFFFFF",
+      "padding": "24px"
+    }
+  },
+  "design": {
+    "style": "moderno, clean",
+    "mobileFirst": true,
+    "colors": {
+      "primary": "#4CAF50",
+      "secondary": "#FFEB3B",
+      "background": "#FFFFFF",
+      "text": "#333333",
+      "accent": "#2196F3"
+    },
+    "font": {
+      "heading": "Roboto",
+      "body": "Open Sans"
+    },
+    "borderRadius": "8px",
+    "shadow": "0 2px 4px rgba(0,0,0,0.1)",
+    "transitions": {
+      "hover": "0.2s ease-in-out"
+    }
+  }
+}
