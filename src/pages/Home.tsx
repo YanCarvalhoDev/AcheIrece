@@ -10,6 +10,9 @@ import { mockBusinesses } from "../data/mockBusinesses";
 import { supabase } from "../lib/supabase";
 import type { Business as SupabaseBusiness } from "../lib/supabase";
 
+
+console.log(React);
+
 interface Business {
   id: string;
   name: string;
