@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-admin/
+Allow: /
+
+Sitemap: https://seudominio.com/sitemap.xml
