@@ -23,7 +23,7 @@ interface Business {
   hours?: string;
   services?: string[];
 }
-
+console.log(React);
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState("latest");
   const [searchTerm, setSearchTerm] = useState("");
