@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import CategorySidebar from "../components/CategorySidebar";
@@ -9,9 +8,6 @@ import Footer from "../components/Footer";
 import { mockBusinesses } from "../data/mockBusinesses";
 import { supabase } from "../lib/supabase";
 import type { Business as SupabaseBusiness } from "../lib/supabase";
-
-
-console.log(React);
 
 interface Business {
   id: string;
@@ -107,7 +103,7 @@ function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero onSearch={handleSearch} />
+      <Hero onSearch={handleSearch} businesses={allBusinesses} />
 
       <main className="main-content">
         <div className="container">
